@@ -1,0 +1,57 @@
+.note-container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for notes */
+.note-container:hover {
+  transform: translateY(-2px);
+}
+
+.note-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.note-content {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.note-date {
+  font-size: 0.9em;
+  color: #888888;
+}
+
+/* Light Theme Note Styles */
+body.light .note-container {
+  background-color: #f9f9f9; /* Light grey background for notes */
+  color: #000000;
+  border: 1px solid #ddd; /* Light border */
+}
+
+/* Dark Theme Note Styles */
+body.dark .note-container {
+  background-color: #444444; /* Dark grey background for notes */
+  color: #ffffff;
+  border: 1px solid #555555; /* Darker border */
+}
+
+/* Button Styles */
+.delete-button {
+  background-color: #ff4d4d; /* Light red */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000; /* Darker red */
+}
